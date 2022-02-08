@@ -27,7 +27,7 @@ services:
         - desafio-network
       volumes:
         - desafio-mongodb-volume:/data/db        
-      enviroment:
+      environment:
         - MONGO_INITDB_ROOT_USERNAME: mongodbuser
         - MONGO_INITDB_ROOT_PASSWORD: mongodbpass
 
@@ -40,7 +40,7 @@ services:
         - desafio-network
       volumes:
         - desafio-mariadb-volume:/var/lib/mysql
-      enviroment:
+      environment:
         - MYSQL_USER: mriadbuser
         - MYSQL_PASSWORD: mariadbpass
         - MYSQL_ROOT_PASSWORD: root
@@ -54,7 +54,7 @@ services:
         - desafio-network
       volumes:
         - desafio-postgresdb-volume:/data        
-      enviroment:
+      environment:
         - POSTGRES_USER: postgresuser
         - POSTGRES_PASSWORD: postgrespass
 
